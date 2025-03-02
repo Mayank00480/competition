@@ -1,0 +1,181 @@
+/* CompetitionList.css */
+.competition-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .competition-header {
+    background-color: #2c323d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  .competition-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .competition-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .competition-item {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 18px;
+  }
+  
+  /* Alternating background colors */
+  .competition-item:nth-child(odd) {
+    background-color: #505a69;
+    color: white;
+  }
+  
+  .competition-item:nth-child(even) {
+    background-color: #505a69;
+    color: black;
+  }
+  
+  /* Fifth item (Golden text) */
+  /* .competition-item:nth-child(5) .competition-name {
+    color: #e0a834;
+  } */
+  
+  .competition-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .competition-count {
+    font-weight: bold;
+  }
+  
+  /* Individual progress bars for each competition item */
+  .item-progress-bar {
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .item-progress-completed {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }
+  
+  /* For light background rows, use a different background color for progress bar */
+  .competition-item:nth-child(even) .item-progress-bar {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main progress bar at bottom */
+  .progress-bar {
+    height: 10px;
+    background-color: #ffffff;
+    margin: 20px 20px 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-completed {
+    height: 100%;
+    width: 90%; /* Adjust based on progress */
+    background-color: #4CAF50;
+    border-radius: 5px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 20px;
+  }
+  
+  .button-dark {
+    background-color: #2c323d;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .button-accent {
+    background-color: #e0a834;
+    color: black;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .button-dark:disabled, .button-accent:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Adjust the progress bar to be dynamic */
+  .progress-completed {
+    height: 100%;
+    transition: width 0.3s ease;
+  }
+  /* Add to your CompetitionList.css */
+
+.item-progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .item-progress-bar {
+    flex-grow: 1;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .register-button {
+    background-color: #e0a834;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .register-button:hover {
+    background-color: #d09726;
+  }
+  
+  .register-button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
+  
+  /* For light background rows, adjust the progress bar background */
+  .competition-item:nth-child(even) .item-progress-bar {
+    background-color: rgba(0, 0, 0, 0.1);
+  }

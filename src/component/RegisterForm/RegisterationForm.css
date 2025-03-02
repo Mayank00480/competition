@@ -1,0 +1,164 @@
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    background-color: #2c3141;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .competition-info {
+    background-color: #505667;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .competition-name {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .competition-slots {
+    background-color: white;
+    color: #2c3141;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .form-section {
+    padding: 20px;
+  }
+  
+  .form-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2c3141;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #505667;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .progress-container {
+    margin: 25px 0;
+  }
+  
+  .progress-bar {
+    background-color: #ddd;
+    height: 8px;
+    border-radius: 4px;
+  }
+  
+  .progress {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .btn-primary {
+    background-color: #F7B84B;
+    color: #000;
+  }
+  
+  .btn-secondary {
+    background-color: #787e8e;
+    color: white;
+  }
+  
+  .required {
+    color: #e53935;
+    margin-left: 4px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .summary {
+    background-color: #f5f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .summary h3 {
+    margin-top: 0;
+    color: #2c3141;
+  }
+  
+  .summary p {
+    margin: 8px 0;
+  }
